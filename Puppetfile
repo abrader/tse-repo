@@ -6,6 +6,8 @@ forge "http://forge.puppetlabs.com"
 #mod "puppetlabs/stdlib",      '4.11.0'
 #mod "puppetlabs/concat",      '2.1.0'
 
+mod 'herculesteam-augeasproviders_sysctl', '2.1.0'
+
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
 #mod 'apache',
@@ -15,3 +17,8 @@ forge "http://forge.puppetlabs.com"
 #mod 'apache',
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
+
+mod 'abrader',
+  :git    => 'https://github.com/abrader/abrader-sysctl.git',
+  :commit => 'cee157b3e13f'
+
