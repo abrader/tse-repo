@@ -1,0 +1,8 @@
+abrader::sysctls:
+  - tcp_synack_retries:
+    ensure: present
+    entry: net.ipv4.tcp_synack_retries
+    value: 5
+    comment: by Master of Puppets
+    apply: true
+    silent: false
