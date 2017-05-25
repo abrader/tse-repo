@@ -1,8 +1,17 @@
 abrader::sysctl::sysctls:
-  - ip4_forward:
+  -
     ensure: present
     entry: net.ipv4.ip_forward
     value: '0'
     target: /etc/sysctl.d/forwarding.conf
-    comment: by Master of Puppets
-    apply: false
+    comment: by NetOps team
+  -
+    ensure: present
+    entry: net.ipv4.tcp_syncookies
+    value: '1'
+    comment: by NetOps team
+  -
+    ensure: present
+    entry: kernel.pid_max
+    value: '65536'
+    comment: by SysOps team
