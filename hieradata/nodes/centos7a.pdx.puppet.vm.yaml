@@ -1,4 +1,4 @@
-abrader::sysctls:
+abrader::sysctl::sysctls:
   - ip4_forward:
     ensure: present
     entry: net.ipv4.ip_forward

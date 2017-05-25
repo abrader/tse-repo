@@ -1,4 +1,4 @@
-abrader::sysctls:
+abrader::sysctl::sysctls:
   - tcp_synack_retries:
     ensure: present
     entry: net.ipv4.tcp_synack_retries
