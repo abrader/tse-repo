@@ -6,7 +6,9 @@ forge "http://forge.puppetlabs.com"
 #mod "puppetlabs/stdlib",      '4.11.0'
 #mod "puppetlabs/concat",      '2.1.0'
 
+mod 'herculesteam-augeasproviders_core',   '2.1.3'
 mod 'herculesteam-augeasproviders_sysctl', '2.1.0'
+mod 'puppetlabs-stdlib',                   '4.17.0'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
